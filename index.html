@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="darkActive">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PokeDex</title>
+    <link rel="shortcut icon" href="src/image/pokemon-logo-png-1447.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="/dist/output.css">
+    <style>
+        link{
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-t from-blue-500 to-blue-600">
+    <nav>
+        <div class="bg-blue-500 flex py-7">
+            <img src="src/image/pokemon-logo-png-1447.png" class="h-9 w-9 ml-7 bg-white rounded-3xl" alt="">
+            <a href="./login.html" class="flex">
+                <p class="ml-2 text-2xl text-white font-bold font-serif">Poke</p><p class="text-yellow-400 text-2xl font-bold font-serif">Dex</p>
+            </a>
+            
+        </div>
+    </nav>
+    <div class="text-center">
+      <h1 class="font-shantell text-yellow-400 font-bold text-7xl my-32 uppercase animate-bounce">Pokemon Card</h1>
+    </div>
+    <div id="listPokemon" class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 px-4 md:px-12 gap-8 py-4 text-sm ">
+        <template id="data">
+            <div id="kartu" class=" bg-white text-blue-600 flex  items-center flex-col rounded-2xl font-bold p-2 text-center justify-centers  hover:scale-105 sm:hover:scale-105 md:hover:scale-110 lg:hover:scale-110 transition-all hover:bg-gradient-to-t from-yellow-300 to-orange-500 hover:text-black cursor-pointer">
+                <h3 class="text-2xl"></h3>
+                <img src="" alt="" class="content-center my-8  justify-center h-20">
+                <p id="tipe"></p>
+                <p id="kekuatan"></p>
+            </div>
+        </template>
+    </div>
+    <div class="detailPokemon"></div>
+  </body>
+  <script src="index.js"></script>
+</html>

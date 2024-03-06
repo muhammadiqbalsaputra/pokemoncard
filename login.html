@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+        input{
+        text-align: center   ;
+            margin-left: 10px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-orange-400 to-yellow-400">
+    <form id="isiForm">
+        <div class=" grid lg:flex md:grid xl:flex my-60 lg:m-64 md:m-52">
+            <img src="src/image/tumblr_mkhnmmFwaA1rxvkeso1_500-ezgif.com-effects.gif" class="w-70 lg:size-max justify-center content-center" alt="">
+            <div class="mx-5 justify-center content-center text-center">
+                <label class="text-blue-700  font-sans font-bold text-xl my-10 mx-5 md:text-2xl md:my-10 lg:text-4xl uppercase" >isi Nama untuk melihat Pokemon Card </label><br>
+                <input class=" h-12 w-40 hover:w-56 hover:rounded-lg mt-3 transition-all hover:scale-105 rounded-3xl" type="text" name="isiNama" id="isiNama" placeholder=" isi namamu..." ><br>
+            <button type="button" class=" m-2 p-2 bg-blue-500 text-white border-none cursor-pointer rounded-2xl hover:bg-white hover:text-cyan-600  hover:scale-110 transition-colors" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
